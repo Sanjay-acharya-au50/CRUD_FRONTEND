@@ -51,7 +51,7 @@ const Register = () => {
   };
 
   return (
-    <div className="m-[50px]">
+    <div className="m-[50px]  bg-[#dcdde1] p-2 rounded-lg">
        <div className='flex justify-between m-3'>
         <Link to='/'> 
          <h1 className='bg-black hover:bg-white hover:text-black text-white rounded-lg hover:shadow-lg border p-2'>Home</h1>
@@ -66,7 +66,7 @@ const Register = () => {
             name="name"
             value={obj.name}
             onChange={allObj}
-            className="m-2 border border-black p-2 rounded"
+            className="m-2  p-2 rounded"
             placeholder="Name"
           />
           <input
@@ -74,7 +74,7 @@ const Register = () => {
             name="email"
             value={obj.email}
             onChange={allObj}
-            className="m-2 border border-black p-2 rounded"
+            className="m-2  p-2 rounded"
             placeholder="Email"
           />
           <input
@@ -82,7 +82,7 @@ const Register = () => {
             name="bike"
             value={obj.bike}
             onChange={allObj}
-            className="m-2 border border-black p-2 rounded"
+            className="m-2 p-2 rounded"
             placeholder="Bike"
           />
           <button className="m-2 bg-black hover:bg-white hover:text-black text-white rounded-lg hover:shadow-lg hover:border border-black p-2" >Submit</button>

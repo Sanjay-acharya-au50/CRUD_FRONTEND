@@ -45,12 +45,12 @@ const Detail = () => {
 
   return (
     <div className='w-full flex flex-col'>
-    <div className='h-[500px] w-[300px] md:w-[800px] border border-black'>
+    <div className='h-[500px] w-[300px] md:w-[800px] rounded-lg bg-[#dcdde1] shadow-lg'>
     <Link to='/'>
     <div className='text-start  p-2'>Home</div>
     </Link>
 
-        <div className='h-[500px] border border-black flex flex-col justify-center items-center'>
+        <div className='h-[500px] border-t flex flex-col justify-center items-center'>
         <div className=''>{loading? ( <>loading..</>) : <p>Name : {user.name} </p>}</div>
         <div className=''>{loading? ( <>loading..</>) : <p> Email : {user.email} </p> }  </div>
         <div className=''>{loading? ( <>loading..</>) : <p> Bike : {user.bike} </p> }  </div>

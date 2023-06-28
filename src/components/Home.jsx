@@ -42,7 +42,7 @@ const Home = () => {
 
   return (
     <div className="flex justify-center items-center flex-col">
-      <div className="w-[360px] md:w-full  flex justify-center items-end flex-col p-1 md:p-2 shadow-xl rounded-lg">
+      <div className=" md:w-full bg-[#dcdde1] flex justify-center items-end flex-col p-1 md:p-2 shadow-xl rounded-lg">
 
       <Link to="/register">
         <button className=" w-[100px] bg-[black] text-white p-2 ">add</button>
@@ -50,12 +50,12 @@ const Home = () => {
       <table className="border mt-2 w-[300px]s">
         <thead className="bg-black text-white w-[300px]">
           
-        <tr className=" w-[300px] border border-black">
-        <th className="p-1 md:p-4"></th>
+        <tr className="">
+        <th className="p-1 md:p-4 border"></th>
         <td className="p-1 md:p-4">name</td>
-        <td className="p-1 md:p-4">email</td>
-        <td className="p-1 md:p-4">bike</td>
-        <td className="p-1 md:p-4">
+        <td className="p-1 md:p-4 border">email</td>
+        <td className="p-1 md:p-4 border">bike</td>
+        <td className="p-1 md:p-4 border">
         
         </td>
       </tr>
@@ -70,7 +70,7 @@ const Home = () => {
 { loading ? ( <div className="text-center">Loading...</div> ) : user && user.map((e, i) => {
   return (
 
-      <tr className="w-[300px]" key={i}>
+      <tr className="" key={i}>
         <th className="p-1 md:p-4 border">{i+1}</th>
         <td className="p-1 md:p-4 border">{e.name}</td>
         <td className="p-1 md:p-4 border">{e.email}</td>
@@ -101,7 +101,7 @@ const Home = () => {
         </tbody>
       </table>
 
-        {/* --------------------------      ---------------------------- */}
+
 
 
         {/* <div>
